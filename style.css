@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat','Poppins','sans-serif';
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    width: 90%;
+    max-width: 992px;
+    margin: auto;
+}
+
+.adding-card-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 30px;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.adding-card-container button{
+    font-size: 18px;
+    background-color: cornflowerblue;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px
+}
+
+.card{
+    background-color: #EDC697;
+    padding: 20px 20px 10px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.que-div{
+    margin-bottom: 10px;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: black;
+    font-size: 20px;
+}
+
+.ans-div{
+    margin-bottom: 20px;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: black;
+    line-height: 22px;
+    font-size: 17px;
+}
+
+.show-hide-answer-btn{
+    background-color: cornflowerblue;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    font-size: 17px;
+}
+
+.edit-btn{
+    text-align: left;
+    background-color: transparent;
+    color: cornflowerblue;
+    font-size: 20px;
+    margin: 10px 4px;
+}
+
+.delete-btn{
+    text-align: left;
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+    margin: 10px 4px;
+}
+
+.modal {
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 35px 20px;
+    border-radius: 0.6em;
+    box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+    z-index: 1000;
+}
+
+.modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.modal .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .wrapper .error-con {
+    margin-bottom: 10px;
+}
+
+.modal .wrapper .error-con span {
+    color: red;
+    font-size: 14px;
+}
+
+.modal .wrapper label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.modal .wrapper textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.modal .wrapper button {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.modal .wrapper button:hover {
+    background-color: darkblue;
+}
+
+.modal .fa-xmark {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.hide{
+    display: none;
+}

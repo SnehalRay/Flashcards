@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <title>FlashCard</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="adding-card-container"> 
+                <!-- Div for adding a new FlashCard -->
+                <button id="add-card-btn">Add New FlashCard</button>
+            </div>
+
+
+
+            <div class="cards-list">
+                <!--Div for viewing the list of cards-->
+                
+
+            
+            </div>
+
+
+            <div class="modal hide" id="add-card-modal">
+                <h2>Add FlashCard</h2>
+                <div class="wrapper">
+                    <div class="error-con">
+                        <span class="hide" id="error">
+                            Input fields cannot be empty!
+                        </span>
+                    </div>
+                    <!-- CLOSE BUTTON -->
+                    <i class="fa-solid fa-xmark"></i>
+
+                    <label for="question">Questions:</label>
+                    <textarea id="question" class="input-q" rows="3" placeholder="Type the questions here""></textarea>
+                    <label for="answer">Answers:</label>
+                    <textarea id="answer" class="input-a" rows="4" placeholder="Type the answer here"></textarea>
+                    <button id="save-btn">Save Button</button>
+
+                </div>
+
+
+            </div>
+
+            
+
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
